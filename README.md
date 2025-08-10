@@ -1,1 +1,63 @@
-# flutter_template
+## ディレクトリ構造
+
+
+- `lib/`                     *Flutterアプリケーションの主要なソースコード*
+  - `main.dart`              *アプリケーションのエントリーポイント*
+  - `core/`                  *アプリ全体で使う基盤コード（共通部分）*
+    - `constants/`           *アプリケーション全体の定数（API URL、文字列、数値など）*
+      - `app_constants.dart`
+    - `theme/`               *アプリケーションのテーマ設定、色、フォントなど*
+      - `app_colors.dart`
+      - `app_theme.dart`
+    - `utils/`               *汎用的なユーティリティ関数（日付フォーマット、バリデーションなど）*
+      - `app_logger.dart`
+      - `validators.dart`
+    - `widgets/`             *アプリ全体で再利用される共通UIウィジェット*
+      - `custom_button.dart`
+      - `loading_indicator.dart`
+  - `features/`              *アプリケーションの主要な機能ごとにフォルダを分ける*
+    - `home/`               *ホーム画面関連*
+      - `data/`              *モデル・リポジトリ*
+        - `models/`
+        - `repositories/`
+      - `domain/`            *ビジネスロジック・ユースケース*
+        - `entities/`
+        - `usecases/`
+      - `presentation/`      *UIとプレゼンテーションロジック*
+        - `pages/`
+          - `home_page.dart`
+        - `widgets/`
+          - `home_card.dart`
+        - `providers/`
+          - `home_provider.dart`
+      - `services/`
+    - `settings/`            *設定画面関連*
+      - `data/`
+      - `presentation/`
+        - `pages/`
+          - `settings_page.dart`
+        - `providers/`
+          - `settings_provider.dart`
+      - `services/`
+    - `auth/`                 *認証機能関連*
+      - `data/`
+      - `presentation/`
+        - `pages/`
+        - `providers/`
+      - `services/`
+  - `routes/`                 *ルーティング設定*
+    - `app_router.dart`
+
+- `assets/`                   *アプリで使用するアセット*
+  - `images/`
+    - `logo.png`
+  - `fonts/`
+  - `data/`
+
+- `test/`                     *テストコード*
+  - `unit/`
+  - `widget/`
+
+- `pubspec.yaml`              *依存関係・メタデータ*
+- `README.md`                 *プロジェクト説明*
+- `.gitignore`                *Git無視設定*
