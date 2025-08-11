@@ -8,7 +8,7 @@ class LeftMenu extends StatelessWidget {
     return Drawer(
       child: ListView(
         padding: EdgeInsets.zero,
-        children: const [
+        children: [
           DrawerHeader(
             decoration: BoxDecoration(color: Colors.blue),
             child: Text('左メニュー', style: TextStyle(color: Colors.white)),
